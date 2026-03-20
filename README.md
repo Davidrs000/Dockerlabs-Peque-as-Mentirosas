@@ -36,6 +36,7 @@ La pista sugiere credenciales
  Análisis: La pista hace referencia a un posible ataque de fuerza bruta a través de ssh , asi que porbaremos entrar a través de ssh con esas credenciales
 
 4. Entrada a traves de ssh
+
  ssh a@172.17.0.2
  password: secret
 
