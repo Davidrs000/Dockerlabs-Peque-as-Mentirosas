@@ -20,6 +20,7 @@ Resultados:
 curl http://172.17.0.2
 ```
 Resultado: <html><body><h1>Pista: Encuentra la clave para A en los archivos.</h1></body></html>
+
 Análisis: 
 Página estática
 Sin formularios ni CMS
@@ -31,6 +32,7 @@ La pista sugiere credenciales
  ```
  Resultado:
  [22][ssh] host: 172.17.0.2   login: a   password: secret
+
  Análisis: La pista hace referencia a un posible ataque de fuerza bruta a través de ssh , asi que porbaremos entrar a través de ssh con esas credenciales
 
 4. Entrada a traves de ssh
@@ -59,6 +61,7 @@ password: password1
 sudo -l
 ```
 Resultado: (ALL) NOPASSWD: /usr/bin/python3
+
 Análisis: EL usuario puede ejecutar python3 como root sin contraeña, lo que permite ejecutar código arbitrario con privlegios elevados.
 
 9. Escalda de privilegios
